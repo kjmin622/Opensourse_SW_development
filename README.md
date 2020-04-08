@@ -14,7 +14,7 @@
 
 ## Team
 
-[tudac-i](./tudaci.png)
+![tudac-i](./tudaci.png){: width="864"}
 
 * Name : tudac
 
