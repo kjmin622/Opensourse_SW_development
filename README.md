@@ -4,7 +4,7 @@
 * School : 한양대학교 ERICA캠퍼스 소프트웨어학부 소프트웨어전공
 * SID : 2019095414
 * Email : kjmin622@naver.com
-* [http://kjmin622.github.io/](자기소개 사이트)
+* [자기소개 사이트](http://kjmin622.github.io/)
 ## Team
 * Name : tudac
 * team member
