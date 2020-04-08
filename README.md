@@ -18,10 +18,10 @@
 
 * team member
 
-	- [길정민(2019095414)](https://kjmin622.github.io) - kjmin622
+	- [길정민(2019095414)](https://kjmin622.github.io) - [kjmin622](https://github.com/kjmin622)
 
-	- [김혜원(2019028313)](https://iopopoi.github.io) - iopopoi
+	- [김혜원(2019028313)](https://iopopoi.github.io) - [iopopoi](https://github.com/iopopoi)
 
-	- [이성민(2019000773)](lee-sungmin.github.io) - lee-sungmin
+	- [이성민(2019000773)](lee-sungmin.github.io) - [lee-sungmin](https://github.com/lee-sungmin)
 
-	- [이현지(2019052251)](huskycat1202.github.io) - huskycat1202
+	- [이현지(2019052251)](huskycat1202.github.io) - [huskycat1202](https://github.com/huskycat1202)
