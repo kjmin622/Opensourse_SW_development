@@ -14,8 +14,8 @@
 
 ## Team
 
+<p color="gray" size="5"><em>icon</em></p>
 <img src = "./tudaci.png" width="380">
-<p color="gray" size="7"><em>icon</em></p>
 
 * Name : tudac
 
