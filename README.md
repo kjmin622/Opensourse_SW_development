@@ -14,7 +14,7 @@
 
 ## Team
 
-![tudac-i](./tudaci.png){: width="864"}
+<img src = "./tudaci.png" width="800">
 
 * Name : tudac
 
