@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="길정민" android:id="@+id/menu0"></item>
+    <item android:title="이현지" android:id="@+id/menu1"></item>
+    <item android:title="김혜원" android:id="@+id/menu2"></item>
+    <item android:title="이성민" android:id="@+id/menu3"></item>
+</menu>
