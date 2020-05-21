@@ -24,6 +24,15 @@
         </activity>
         <activity android:name=".DetailActivity"></activity>
         <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".AppCompatPreferenceActivity"/>
+        <service android:name=".FetchWeatherService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <provider
+            android:authorities="com.example.weather_forecast_application"
+            android:name=".provider.WeatherProvider"
+            android:enabled="true"
+            android:exported="true"></provider>
     </application>
 
 </manifest>
