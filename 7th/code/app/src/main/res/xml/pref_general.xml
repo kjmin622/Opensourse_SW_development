@@ -4,7 +4,7 @@
     <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
     <ListPreference
         android:key="city"
-        android:title="@string/pref_title_city"
+        android:title="city"
         android:defaultValue="0"
         android:entries="@array/pref_city_list_titles"
         android:entryValues="@array/pref_city_list_values"

@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.Vector;
 
 public class FetchWeatherService extends Service {
-    public static final String ACTION_RETRIEVE_WEATHER_DATA = "com.loyid.weatherforecast.RETRIEVE_DATA";
+    public static final String ACTION_RETRIEVE_WEATHER_DATA = "com.example.weather_forecast_application.RETRIEVE_DATA";
     public static final String EXTRA_WEATHER_DATA = "weather-data";
     public FetchWeatherService() {
     }
@@ -189,7 +189,7 @@ public class FetchWeatherService extends Service {
                         .appendQueryParameter(FORMAT_PARAM, format)
                         .appendQueryParameter(UNITS_PARAM, units)
                         .appendQueryParameter(DAYS_PARAM, Integer.toString(numDays))
-                        .appendQueryParameter(APPID_PARAM, "5fd2f2cde90c1533efb95b19c048a528")
+                        .appendQueryParameter(APPID_PARAM, "5fd2f2cde90c1533efb95b19c048a528") // 926822dd33c780a536930bb1f78bd083 5fd2f2cde90c1533efb95b19c048a528
                         .build();
 
                 URL url = new URL(builtUri.toString());

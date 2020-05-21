@@ -7,7 +7,7 @@ import android.provider.BaseColumns;
 import android.text.format.Time;
 
 public class WeatherContract {
-    public static final String CONTENT_AUTHORITY = "com.loyid.weatherforecast";
+    public static final String CONTENT_AUTHORITY = "com.example.weather_forecast_application";
 
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 

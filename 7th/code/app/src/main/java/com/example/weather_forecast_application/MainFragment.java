@@ -169,11 +169,6 @@ public class MainFragment extends Fragment implements LoaderManager.LoaderCallba
     }
 
     private void refreshWeatherData() {
-        /*
-        Intent intent = new Intent(getActivity(), FetchWeatherService.class);
-        intent.setAction(FetchWeatherService.ACTION_RETRIEVE_WEATHER_DATA);
-        getActivity().startService(intent);
-        */
         if (mService != null) {
             try {
                 mService.retrieveWeatherData();
@@ -222,17 +217,9 @@ public class MainFragment extends Fragment implements LoaderManager.LoaderCallba
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                /*
-                String forecast = mForecastAdapter.getItem(position);
-                Toast.makeText(getActivity(), forecast, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getActivity(), DetailActivity.class);
-                intent.putExtra("data", forecast);
-                */
             }
         });
 
-        //IntentFilter intentFilter = new IntentFilter(FetchWeatherService.ACTION_RETRIEVE_WEATHER_DATA);
-        //getActivity().registerReceiver(mBroadcastReceiver, intentFilter);
         return rootView;
     }
 
