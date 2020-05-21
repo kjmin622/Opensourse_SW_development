@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Weather_Forecast_Application</string>
+    <string name="hello_blank_fragment">tmp</string>
 </resources>

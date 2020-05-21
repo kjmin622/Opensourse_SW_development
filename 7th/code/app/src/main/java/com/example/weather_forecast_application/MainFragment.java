@@ -1,5 +1,6 @@
 package com.example.weather_forecast_application;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,22 +16,33 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MainFragment extends Fragment {
+
     private ArrayAdapter<String> mForecastAdapter;
 
-    public MainFragment(){}
+    public MainFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Create some dummy data for the ListView.  Here's a sample weekly forecast
         String[] data = {
-                "sample1",
-                "sample2",
-                "sample3",
-                "sample4",
-                "sample5",
-                "sample6",
-                "sample7"
+                "Mon 6/23 - Sunny - 31/17",
+                "Tue 6/24 - Foggy - 21/8",
+                "Wed 6/25 - Cloudy - 22/17",
+                "Thurs 6/26 - Rainy - 18/11",
+                "Fri 6/27 - Foggy - 21/10",
+                "Sat 6/28 - TRAPPED IN WEATHERSTATION - 23/18",
+                "Sun 6/29 - Sunny - 20/7"
         };
+
         List<String> weekForecast = new ArrayList<String>(Arrays.asList(data));
+
+        // Now that we have some dummy forecast data, create an ArrayAdapter.
+        // The ArrayAdapter will take data from a source (like our dummy forecast) and
+        // use it to populate the ListView it's attached to.
         mForecastAdapter =
                 new ArrayAdapter<String>(
                         getActivity(), // The current context (this activity)
@@ -49,9 +61,13 @@ public class MainFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 String forecast = mForecastAdapter.getItem(position);
                 Toast.makeText(getActivity(), forecast, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), DetailActivity.class);
+                intent.putExtra("data", forecast);
+                startActivity(intent);
             }
         });
 
         return rootView;
     }
+
 }
